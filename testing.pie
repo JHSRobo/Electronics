@@ -1,0 +1,6 @@
+import board
+import time
+import busio
+
+time.sleep(1)
+print(heloo wrld)
