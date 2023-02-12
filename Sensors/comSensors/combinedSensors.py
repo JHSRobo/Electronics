@@ -41,9 +41,9 @@ class Sensors:
             return sensor.read()
 
 while 1:
-    tempSensor = tempSensor()
-    orientationSensor = orientationSensor()
-    pressureSenor = pressureSenor()
+    tempSensor = Sensors.tempSensor()
+    orientationSensor = Sensors.orientationSensor()
+    pressureSenor = Sensors.pressureSenor()
 
     print(f"Temp value: {tempSensor}, Orientation value: {orientationSensor}, Sensor value: {pressureSenor}")
 
