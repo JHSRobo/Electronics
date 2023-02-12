@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import time
 import board
 import adafruit_bno055
@@ -10,7 +11,6 @@ class Sensors:
         try: sensor = adafruit_bno055.BNO055_I2C(i2c)
         except: print("Cannot connect to the bno055 sensor (Temp Fail)")
         else:
-
             global last_val
             last_val = 0xffff
 
